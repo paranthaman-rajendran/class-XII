@@ -90,7 +90,7 @@ Bijective:      a → 1 , b → 2 , c → 3 (one-to-one & onto)
 
 ---
 
-## 6️⃣ Mermaid Diagram Visualization
+## 6️⃣ Visualization - Relations and Funcitons 
 
 ```mermaid
 flowchart TD
