@@ -2,6 +2,51 @@
 
 ---
 
+## Visualization - Relations & Functions
+
+```mermaid
+%%{init: {'theme': 'dark', 'flowchart': {'curve': 'basis'}}}%%
+flowchart TD
+    Relations[Relations] --> TypesR[Types of Relations]
+    Relations --> Functions[Functions]
+
+    TypesR --> Reflexive[Reflexive]
+    TypesR --> Symmetric[Symmetric]
+    TypesR --> Transitive[Transitive]
+
+    Reflexive & Symmetric & Transitive --> Equivalence[Equivalence Relation]
+
+    Functions --> TypesF[Types of Functions]
+
+    TypesF --> OneToOne[One-to-One]
+    TypesF --> Onto[Onto]
+
+    OneToOne & Onto --> Bijective[Bijective]
+
+    classDef default fill:#2d2d2d,color:#fff,stroke:#666;
+    classDef relations fill:#1a237e,color:#fff,stroke:#3949ab;
+    classDef functions fill:#1b5e20,color:#fff,stroke:#2e7d32;
+    classDef types fill:#3e2723,color:#fff,stroke:#4e342e;
+    classDef special fill:#4a148c,color:#fff,stroke:#6a1b9a;
+
+    class Relations,Functions relations;
+    class TypesR,TypesF types;
+    class Reflexive,Symmetric,Transitive,Onto,OneToOne functions;
+    class Equivalence,Bijective special;
+
+    linkStyle default stroke:#666,stroke-width:2px;
+```
+
+This diagram shows:
+
+- Hierarchy of Relations and Functions
+- Different types of Relations (Reflexive, Symmetric, Transitive)
+- How Equivalence relation combines all three relation types
+- Function classifications (One-to-One, Onto, Bijective)
+- How Bijective functions combine properties of One-to-One and Onto functions
+
+---
+
 Key points from the diagram:
 
 1. **Relations**: Shows connection between elements of two sets
@@ -87,50 +132,5 @@ Bijective:      a → 1 , b → 2 , c → 3 (one-to-one & onto)
 - **One-to-One:** Fingerprint
 - **Onto:** Cinema seats filled
 - **Bijective:** One student, one seat
-
----
-
-## 6️⃣ Mermaid Diagram Visualization
-
-```mermaid
-%%{init: {'theme': 'dark', 'flowchart': {'curve': 'basis'}}}%%
-flowchart TD
-    Relations[Relations] --> TypesR[Types of Relations]
-    Relations --> Functions[Functions]
-
-    TypesR --> Reflexive[Reflexive]
-    TypesR --> Symmetric[Symmetric]
-    TypesR --> Transitive[Transitive]
-
-    Reflexive & Symmetric & Transitive --> Equivalence[Equivalence Relation]
-
-    Functions --> TypesF[Types of Functions]
-
-    TypesF --> OneToOne[One-to-One]
-    TypesF --> Onto[Onto]
-
-    OneToOne & Onto --> Bijective[Bijective]
-
-    classDef default fill:#2d2d2d,color:#fff,stroke:#666;
-    classDef relations fill:#1a237e,color:#fff,stroke:#3949ab;
-    classDef functions fill:#1b5e20,color:#fff,stroke:#2e7d32;
-    classDef types fill:#3e2723,color:#fff,stroke:#4e342e;
-    classDef special fill:#4a148c,color:#fff,stroke:#6a1b9a;
-
-    class Relations,Functions relations;
-    class TypesR,TypesF types;
-    class Reflexive,Symmetric,Transitive,Onto,OneToOne functions;
-    class Equivalence,Bijective special;
-
-    linkStyle default stroke:#666,stroke-width:2px;
-```
-
-This diagram shows:
-
-- Hierarchy of Relations and Functions
-- Different types of Relations (Reflexive, Symmetric, Transitive)
-- How Equivalence relation combines all three relation types
-- Function classifications (One-to-One, Onto, Bijective)
-- How Bijective functions combine properties of One-to-One and Onto functions
 
 ---
