@@ -90,9 +90,10 @@ Bijective:      a → 1 , b → 2 , c → 3 (one-to-one & onto)
 
 ---
 
-## 6️⃣ Visualization - Relations and Funcitons 
+## 6️⃣ Mermaid Diagram Visualization
 
 ```mermaid
+%%{init: {'theme': 'dark', 'flowchart': {'curve': 'basis'}}}%%
 flowchart TD
     Relations[Relations] --> TypesR[Types of Relations]
     Relations --> Functions[Functions]
@@ -110,16 +111,18 @@ flowchart TD
 
     OneToOne & Onto --> Bijective[Bijective]
 
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    classDef relations fill:#e1f5fe,stroke:#01579b;
-    classDef functions fill:#e8f5e9,stroke:#1b5e20;
-    classDef types fill:#fff3e0,stroke:#e65100;
-    classDef special fill:#fce4ec,stroke:#880e4f;
+    classDef default fill:#2d2d2d,color:#fff,stroke:#666;
+    classDef relations fill:#1a237e,color:#fff,stroke:#3949ab;
+    classDef functions fill:#1b5e20,color:#fff,stroke:#2e7d32;
+    classDef types fill:#3e2723,color:#fff,stroke:#4e342e;
+    classDef special fill:#4a148c,color:#fff,stroke:#6a1b9a;
 
     class Relations,Functions relations;
     class TypesR,TypesF types;
     class Reflexive,Symmetric,Transitive,Onto,OneToOne functions;
     class Equivalence,Bijective special;
+
+    linkStyle default stroke:#666,stroke-width:2px;
 ```
 
 This diagram shows:
